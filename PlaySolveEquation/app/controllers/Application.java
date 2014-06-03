@@ -15,7 +15,7 @@ public class Application extends Controller {
 	public static Result index() {
 		return ok(index.render(result));
 	}
-
+ 
 	public static Result calc() {
 
 		DynamicForm form = Form.form().bindFromRequest();
