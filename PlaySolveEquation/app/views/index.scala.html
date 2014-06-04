@@ -1,4 +1,4 @@
-@(result: String)
+@(result:String)
 
 @import helper._
 @main("Emad Alyoussef") {
@@ -6,10 +6,11 @@
     <h1>Web Calculator</h1>
     
     @helper.form(routes.Application.calc()){
-    	<input type="text" name="a" /> X^2+
-    	<input type="text" name="b" />X+
-    	<input type="text" name="c" />=0
+    	<input type="text" name="a" /> X^2 +
+    	<input type="text" name="b" /> X +
+    	<input type="text" name="c" /> = 0
     	<input type="submit" value="Calc" /> 
     }
-Result <span id="result">@result</span>
+<br>
+<span id="result">@result</span>
 }
